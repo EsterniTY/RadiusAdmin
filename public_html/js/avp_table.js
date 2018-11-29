@@ -28,6 +28,10 @@ $(document).ready(function() {
 		$(this).closest('tr').remove();
 	});
 
+	$('#replyattrs-table').on("click", '#delete-row', function() {
+		$(this).closest('tr').remove();
+	});
+
 	$('#add-row-checkattrs').click(function() {
 		$('#checkattrs-table').append('<tr><td><input name="checkattrs-id[]" type="hidden" value=""><input name="checkattrs-attribute[]" list="available-attributes" type="text" class="form-control"></td><td><select name="checkattrs-operator[]" class="form-control">' + operatoroptions + '</select></td><td><input name="checkattrs-value[]" type="text" class="form-control"></td><td><button type="button" class="btn btn-default" id="delete-row"><span class="glyphicon glyphicon-remove"></span></button></td></tr>');
 	});
