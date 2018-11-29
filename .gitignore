@@ -19,3 +19,6 @@ tmp/templates_c/
 
 ### Config file
 app/config.php
+
+### NetBeans project dir
+nbproject/
