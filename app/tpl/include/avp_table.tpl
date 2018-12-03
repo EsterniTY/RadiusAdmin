@@ -45,7 +45,11 @@
 					</select>
 				</td>
 				<td>
+                    {if $attr->attribute == "Cleartext-Password"}
+					<input name="{$type}-value[]" type="password" class="form-control" value="{$attr->value}">
+                    {else}
 					<input name="{$type}-value[]" type="text" class="form-control" value="{$attr->value}">
+                    {/if}
 				</td>
 				<td>
 					<button type="button" class="btn btn-default" id="delete-row"><span class="glyphicon glyphicon-remove"></span></button>
